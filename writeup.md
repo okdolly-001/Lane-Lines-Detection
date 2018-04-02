@@ -2,18 +2,22 @@
 
 #### 1. Describe your pipeline.
 
-My pipeline consists of 5 steps. For preprocessing, I converted the image to grayscale and then smoothed the image with Gaussian blurring.After that,I called OpenCV's Canny function to detect edges, which are areas of an image where the colors change quickly.In short,Canny edge detector is a strong gradient detector. 
+My pipeline consists of 5 steps. 
+⋅⋅⋅1.For preprocessing, I converted the image to grayscale and then smoothed the image with Gaussian blurring.
+
+⋅⋅⋅2.After that,I called OpenCV's Canny function to detect edges, which are areas of an image where the colors change quickly.In short,Canny edge detector is a strong gradient detector. 
 
 [Here's the full algorithm:](https://web.stanford.edu/class/ee368/Handouts/Lectures/2014_Spring/Combined_Slides/11-Edge-Detection-Combined.pdf)
-1.Smooth image with a Gaussian filter
 
-2.Approximate gradient magnitude and angle
+⋅⋅⋅* Smooth image with a Gaussian filter
 
-3.Apply nonmaxima suppression to gradient magnitude
+⋅⋅⋅* Approximate gradient magnitude and angle
 
-4.Double thresholding to detect strong and weak edge pixels
+⋅⋅⋅* Apply nonmaxima suppression to gradient magnitude
 
-5.Reject weak edge pixels not connected with strong edge pixels
+⋅⋅⋅* Double thresholding to detect strong and weak edge pixels
+
+⋅⋅⋅* Reject weak edge pixels not connected with strong edge pixels
 
 I approximated the region of interests by feeding four coordinates, effectively two lines. For example, the bottom-left point is set as (0.1 ** width,height).
 
