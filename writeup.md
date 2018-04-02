@@ -3,9 +3,11 @@
 #### 1. Describe your pipeline.
 
 My pipeline consists of 4 steps. 
+
 1.For preprocessing, I converted the image to grayscale and then smoothed the image with Gaussian blurring.
 
-2.After that,I called OpenCV's Canny function to detect edges, which are areas of an image where the colors change quickly.In short,Canny edge detector is a strong gradient detector. 
+2.After that, I called OpenCV's Canny function to detect edges, which are areas of an image where the colors change quickly.
+ Canny edge detector is a strong gradient detector. 
 
 [Here's the full algorithm:](https://web.stanford.edu/class/ee368/Handouts/Lectures/2014_Spring/Combined_Slides/11-Edge-Detection-Combined.pdf)
 
