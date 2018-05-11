@@ -1,7 +1,9 @@
 # Lane-Lines-Detection
 
 ##### Check out my interactive Jupyter notebook:
-[![Binder](http://mybinder.org/badge.svg)](https://hub.mybinder.org/user/okdolly-lane-lines-detection-xsgbb13v/notebooks/P1.ipynb)
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/okdolly/Lane-Lines-Detection/master?filepath=P1.ipynb)
+
 
 ## Reflection
 
